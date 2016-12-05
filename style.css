@@ -1,0 +1,33 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.main_body
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 440px;
+    height: 440px;
+    margin-top: -235px;
+    margin-left: -235px;
+
+    background: url(./Checkerboard.png) no-repeat;
+    cursor: pointer;
+}
+
+.main_body .boxes{
+     margin-top: 17px;
+     margin-left: 17px;
+     font-size: 0;
+}
+.main_body .boxes>div{
+     display: inline-block;
+     width: 46px;
+     height: 46px;
+     margin: 2px;
+     
+}
