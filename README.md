@@ -1,6 +1,10 @@
 # Dot-And-Boxes-web
 ## 棋类博弈项目——点格棋网页实现项目  
 ***
+## 试玩请[戳戳戳](http://wdywae.cn/tmp/)
+###  首先先介绍一下整个游戏的大致思想，流程图如下：
+  ![Image text](https://github.com/Ts799498164/Dot-And-Boxes_web/blob/master/images/pic.png)
+   - - - -  
 ### 首先我本想在网上找一下点格棋棋盘来节省页面DOM结构，但使用各大搜索引擎却始终找不到能符合我要求的点格棋棋盘，所以我使用Adobe Fireworks CS6做了一个简易的8 * 8点格棋棋盘（后期打算完善功能，可以通过页面交互选择6 * 6或者3 * 3等棋盘）。棋盘如下：  
 ![Image text](https://github.com/Ts799498164/Dot-And-Boxes-web-/blob/master/Checkerboard.png) 
   - - - -
@@ -9,7 +13,7 @@
 ### 如图所示，向8 * 8棋盘里添加64个盒子div。我打算通过只添加盒子的左边界和上边界来实现点击连线的功能。这样的好处是避免了繁琐的判断，封装一个简单函数即可。  
   - - - -     
 ### 使用原生javascript成功实现了点击事件确定鼠标点击点位于棋盘的哪一行哪一列，在控制台中测试成功，如下所示：
-![Image text](https://github.com/Ts799498164/image-folder/blob/master/Checkerboard3.png)  
+![Image text](https://github.com/Ts799498164/image-folder/blob/master/Checkerboard3.png)  
   - - - -
 ### 在点击事件确立所点击的点之后，添加线条的过程中出现了一个问题，通过先定义边框这样动态修改边框时就不会发生盒子位置的变化，所以我开始在盒子css写：  
 `border ： 2px solid #FFF；`  
@@ -28,12 +32,24 @@
 ![Image text](https://github.com/Ts799498164/Dot-And-Boxes_web/blob/master/images/3.png)   
 ![Image text](https://github.com/Ts799498164/Dot-And-Boxes_web/blob/master/images/4.png)   
   - - - - 
+`期末结束浪到现在终于完成了后续的代码，可以向学校交差了，啦啦啦~~~ `
+  - - - - 
+### 游戏规则，如下：
+![Image text](https://github.com/Ts799498164/Dot-And-Boxes_web/blob/master/images/QQ%E5%9B%BE%E7%89%8720170216160010.png)   
+  - - - -    
+### 鼠标点击的交互很简单，就不详细展开了，流程图如下：
+  ![Image text](https://github.com/Ts799498164/Dot-And-Boxes_web/blob/master/images/Untitled%20Diagram1.png)
+   - - - -   
+### 怎么判断是否已经围成一个封闭棋格的流程图如下：
+  ![Image text](https://github.com/Ts799498164/Dot-And-Boxes_web/blob/master/images/isSurround.png)
+   - - - -  
+### 电脑落子的选择过程的流程图如下：
+  ![Image text](https://github.com/Ts799498164/Dot-And-Boxes_web/blob/master/images/Untitled%20Diagram.png)
+   - - - -  
+### 悔棋的流程图如下：
+  ![Image text](https://github.com/Ts799498164/Dot-And-Boxes_web/blob/master/images/goBack.png)
+   - - - -  
    
-      
-       
-       
-        
-        
 ### To be continued.
 
 
