@@ -1,3 +1,9 @@
+
+<!-- 
+     @author tanshen
+     @Tel 18538688990 
+     2017/02/10
+ -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,10 +16,10 @@
      <div id="play1" class="play1">0个</div>
      <div id="play2" class="play2">0个</div>
      <div id="win" class="win">
-          <p>获胜者：选手</p>
+          <p></p>
           <ul>
+               <li id="reset">重置</li>
                <li id="confirm">确定</li>
-               <li id="reset">重来</li>
           </ul>
      </div>
      <div class="main_body" id="main_body">
@@ -82,18 +88,35 @@
                <div  id="86"></div>
                <div  id="87"></div>
                <div  id="88"></div>
-
           </div>
      </div>
+     <div class="functionBar">
+          <ul>
+               <li id="go_back">悔棋(剩余3次)</li>
+               <li id="reset_bar">重置</li>
+          </ul> 
+     </div>
+     
 
 
 
 
 
 
-
-
-
+     <div class="hideLog" id="hideLog">
+          <span class="log">显示规则</span>
+          <div class="tips" id="tips">
+               <h2>点点连格棋</h2>
+               <p>1、代表你的颜色：<span class="yourColor"></span></p>
+               <p>2、代表电脑颜色：<span class="computerColor"></span></p>
+               <p>3、游戏规则如下 </p>
+               <div id="hideArea">
+                    a、点击两个点之间的区域可以形成一条纵向或横向的直线(简称画线过程),但不能重复画线同一区域；<br />
+                    b、假设在你的回合中，画线使一个方格区域封闭时，该区域会被涂上代表你的颜色，以表示该方格区域被你占领；同时在占领一块方格区域后你需继续画线，直到画线没有形成封闭区域才转换至对手回合；<br />
+                    c、当无法再画线时，游戏结束，占领的总区域个数最大的玩家获胜。<br />
+               </div>  
+          </div>     
+     </div>
      <script type="text/javascript"></script>
 </body>
 </html>

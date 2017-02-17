@@ -1,118 +1,150 @@
-*
-{
+/**
+ * @author tanshen
+ * @Tel 18538688990
+ * 2017/02/10
+ */
+
+* {
     margin: 0;
     padding: 0;
 }
 
-.main_body
-{
+.main_body {
     position: absolute;
     top: 50%;
     left: 50%;
-
     width: 440px;
     height: 440px;
     margin-top: -215px;
     margin-left: -235px;
-
     cursor: pointer;
-
     background: url(./Checkerboard.png) no-repeat;
 }
 
-.main_body .boxes
-{
+.main_body .boxes {
     font-size: 0;
-
     margin-top: 17px;
     margin-left: 18px;
 }
-.main_body .boxes > div
-{
-    display: inline-block;
 
+.main_body .boxes > div {
+    display: inline-block;
     width: 44px;
     height: 44px;
     margin: 1px;
-
     border: 2px solid transparent;
 }
-.play1
-{
-    font-size: 20px;
+
+.play1 {
     font-weight: bold;
     line-height: 55px;
-
     position: absolute;
     left: 42%;
-
     width: 55px;
     height: 55px;
     margin-top: 20px;
     margin-left: -22px;
-
     text-align: center;
-
     border: 1px solid #ff8c00;
 }
-.play2
-{
-    font-size: 20px;
+
+.play2 {
     font-weight: bold;
     line-height: 55px;
-
     position: absolute;
     left: 52%;
-
     width: 55px;
     height: 55px;
     margin-top: 20px;
     margin-left: -22px;
-
     text-align: center;
-
     border: 1px solid #4593fd;
 }
 
-.win
-{
+.win {
     font-size: 24px;
-    font-weight: bold;
     line-height: 50px;
-
     position: absolute;
     z-index: 3;
     top: 50%;
     left: 50%;
-
     display: none;
-
-    width: 220px;
-    height: 110px;
-    margin-top: -120px;
-    margin-left: -150px;
-
+    width: 270px;
+    height: 120px;
+    margin-top: -108px;
+    margin-left: -176px;
     text-align: center;
-
-    border: 2px solid #ff8c00;
+    border: 2px solid #ccc;
     background: #f7f7f7;
 }
-.win ul
-{
+
+ul {
     list-style: none;
 }
-.win ul li
-{
-    font-size: 22px;
+
+ul li {
+    font-size: 17px;
     line-height: 40px;
-
     display: inline-block;
-
-    width: 65px;
     height: 40px;
     margin: 5px;
-
     cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid red;
+}
 
-    border: 2px solid #82bcf6;
+.functionBar {
+    position: absolute;
+    z-index: 3;
+    top: 80%;
+    left: 38%;
+}
+
+.tips{
+    padding-left: 10px;
+    margin-left: 2px;
+    position: absolute;
+    padding-right:10px;
+    width: 390px;
+    line-height: 30px;
+    border: 1px dotted #CCC;
+    border-left: 2px dotted #CCC;
+    left: -414px;
+}
+.log{
+    position: absolute;
+    border: 1px solid red;
+    top: 40px;
+    padding-left: 4px;
+    margin-left: -1px;
+    width: 20px;
+}
+
+.hideLog{
+    padding-left: 2px;
+    position: absolute;
+    margin-top: 100px;
+    font-size: 15px;
+}
+
+.yourColor{
+    display: inline-block;
+    background:#f5b481;
+    width: 20px;
+    height: 20px;
+}
+
+.computerColor{
+    display: inline-block;
+    background:#47eeee;
+    width: 20px;
+    height: 20px;
+}
+#hideArea{
+    border: 1px dotted #AAA;
+    margin-bottom: 10px;
+    background: #add8e6;
+    line-height: 20px;
+    padding:0 5px;
 }
